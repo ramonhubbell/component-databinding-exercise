@@ -27,4 +27,13 @@ export class AppComponent {
       content: blueprintData.serverContent
     });
   }
+// For Demo of ngOnChanges
+  onChangeFirst(){
+    this.serverElements[0].name = 'Changed!';
+  }
+
+  // For Demo of ngDestroy
+  onDestroyFirst(){
+    this.serverElements.splice(0,1);
+  }
 }
